@@ -1,5 +1,3 @@
-import Header from '../Header';
-
 export default function TealPage() {
   return (
     <div className="bg-white">
