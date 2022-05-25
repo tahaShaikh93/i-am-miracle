@@ -270,7 +270,7 @@ export default function Example() {
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
                 </div>
-                <div className="relative   items-center " style={{ textAlign: 'center' }}>
+                <div className="relative flex justify-center  items-center ">
                   <img
                     className="object-contain"
                     style={{ height: '350px' }}
