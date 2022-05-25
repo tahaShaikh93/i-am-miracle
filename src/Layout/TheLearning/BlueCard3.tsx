@@ -81,7 +81,7 @@ export default function BlueCard3() {
                 <div className="w-full flex justify-center items-center z-999 absolute inset-0 mt-20">
                   <img
                     className="w-screen"
-                    src="img/Wavy-bluebg3.svg"
+                    src="img/Banner 3.png"
                     alt="People working on laptops"
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />

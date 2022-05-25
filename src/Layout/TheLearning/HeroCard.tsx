@@ -92,15 +92,15 @@ export default function HeroCard() {
                 <div className="absolute inset-0">
                   <img
                     className="h-full w-full object-cover"
-                    src="img/New-welcome-Banner.png"
+                    src="img/Banner 1@2x-cropped.png"
                     alt="People working on laptops"
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
                 </div>
                 <div className="relative flex justify-center  items-center ">
                   <img
-                    className="object-contain"
-                    style={{ height: '350px' }}
+                    className="object-contain "
+                    style={{ height: '350px', marginTop: '63px' }}
                     src="img/Welcome-banner-img.svg"
                     alt="People working on laptops"
                   />
