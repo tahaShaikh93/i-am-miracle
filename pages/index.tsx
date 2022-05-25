@@ -1,10 +1,5 @@
-/* This example requires Tailwind CSS v2.0+ */
-
-import Header from '../src/Layout/Header'
-
+import MainCard from '../src/Layout/TheLearning/MainCard';
 
 export default function Example() {
-  return (
-   <Header/>
-  )
+  return <MainCard />;
 }
