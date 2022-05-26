@@ -4,7 +4,7 @@ export default function TealPage() {
       <main>
         <div>
           {/* teal page bg */}
-          <div className="relative">
+          <div className="relative -top-1">
             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
             <div className="max-w-full ">
               <div className="relative ">
