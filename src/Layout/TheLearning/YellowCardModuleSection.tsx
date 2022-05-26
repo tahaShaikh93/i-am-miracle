@@ -24,12 +24,10 @@ export default function YellowCardModuleSection() {
                         <div className="flex  justify-center">
                           <div className="p-12 text-black bg-white">
                             <div className="text-center flex  text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                              <div className="px-6 py-16 flex  text-customColors-yellowError">
-                                Modules
-                              </div>
+                              <div className="px-6 py-16 flex  text-yellow">Modules</div>
                             </div>
                           </div>
-                          <div className="flex flex-col align-text-top text-white bg-red">
+                          <div className="flex flex-col align-text-top text-white bg-red1">
                             <div className="text-2xl font-extrabold border-b py-3 flex justify-center px-6 border-white">
                               Beginner
                             </div>
@@ -37,7 +35,7 @@ export default function YellowCardModuleSection() {
                               2<p className="">weeks</p>
                             </div>
                           </div>
-                          <div className="flex flex-col text-white bg-customColors-yellowError">
+                          <div className="flex flex-col text-white bg-yellow">
                             <div className="text-2xl font-extrabold border-b py-3 px-6 flex justify-center border-white">
                               Intermediate
                             </div>
@@ -45,7 +43,7 @@ export default function YellowCardModuleSection() {
                               4<p className="">weeks</p>
                             </div>
                           </div>
-                          <div className="flex flex-col text-white bg-green">
+                          <div className="flex flex-col text-white bg-green2">
                             <div className="text-2xl font-extrabold border-b py-3 px-6 flex justify-center border-white">
                               Advance
                             </div>
