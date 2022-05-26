@@ -21,7 +21,7 @@ export default function AeroplaneSection() {
                 <div className="relative px-4 py-16 sm:px-6 ">
                   <div
                     className=" max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center"
-                    style={{ marginTop: '60px' }}
+                    style={{ marginTop: '170px' }}
                   >
                     <div className="space-y-4 sm:space-y-0 sm:mx-auto">
                       <img
@@ -33,22 +33,15 @@ export default function AeroplaneSection() {
                     </div>
                   </div>
                 </div>
-                <div className="relative px-4 py-16 sm:px-6 sm:py-24  lg:py-32 lg:px-8">
-                  <div
-                    className="mt-10 max-w-sm mx-auto sm:max-w-none flex justify-right"
-                    style={{ textAlign: 'right' }}
-                  >
+                <div className="relative px-4 py-16 sm:px-6 sm:py-0  lg:py-0  lg:px-8">
+                  <div className="" style={{ textAlign: 'right' }}>
                     <div className="relative  ">
-                      <div className="md:w-6/12 w-full mb-10 md:mb-0 mx-7 sm:mx-7 md:mx-0 lg:mx-0 xl:mx-0">
+                      <div
+                        className="md:w-6/12 flex w-full mb-10 md:mb-0 mx-7 sm:mx-7 md:mx-0 lg:mx-0 xl:mx-0"
+                        style={{ float: 'right' }}
+                      >
                         <div className="">
-                          <div className="relative   ">
-                            <div className="relative px-4 py-16 sm:px-6 sm:py-0 lg:py-0 ">
-                              {/* <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center"> */}
-                              <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-                                <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5"></div>
-                              </div>
-                            </div>
-                          </div>
+                          <div className="relative   "></div>
                           <p className="text-black py-10 px-20">
                             Every kid is provided with a list of dos and don'ts since they are not
                             cognitively advanced to make the right decision. Parents feel that their
@@ -73,7 +66,7 @@ export default function AeroplaneSection() {
                     </div>
                   </div>
                   <img
-                    className="h-32 w-32 object-cover"
+                    className=" object-cover"
                     src="img/Boy-image.svg"
                     alt="People working on laptops"
                   />

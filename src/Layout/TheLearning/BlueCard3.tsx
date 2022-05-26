@@ -81,36 +81,30 @@ export default function BlueCard3() {
                 <div className="w-full flex justify-center items-center z-999 absolute inset-0 mt-20">
                   <img
                     className="w-screen"
-                    src="img/Banner 3.png"
+                    src="img/Banner 3 (1).png"
                     alt="People working on laptops"
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 z-999">
                   <div className="relative  ">
-                    <div className="md:w-6/12 w-full mb-10 md:mb-0 mx-7 sm:mx-7 md:mx-0 lg:mx-0 xl:mx-0">
+                    <div className="md:w-6/12 w-full  mb-10 md:mb-0 mx-7 sm:mx-7 md:mx-0 lg:mx-0 xl:mx-0">
                       <div className="">
                         <div className="relative   ">
                           <div className="absolute inset-0">
                             <img
-                              className="h-full  object-cover"
+                              className="px-16"
                               src="img/Aboutus-bg.svg"
                               alt="People working on laptops"
                             />
-                            <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
                           </div>
-                          <div className="relative px-4 py-16 sm:px-6 sm:py-0 lg:py-0 ">
-                            <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                          <div className="relative flex justify-center ">
+                            <h1 className="text-center mt-4 text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
                               <span className="block text-white">About us</span>
                             </h1>
-
-                            {/* <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center"> */}
-                            <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-                              <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5"></div>
-                            </div>
                           </div>
                         </div>
-                        <p className="text-white py-10 px-20">
+                        <p className="text-white mt-20 py-10 px-20">
                           In this fast-paced world, children usually tend to succumb to a lot of
                           stress or become hyperactive for want of something constantly new. I AM
                           MIRACLE brings mindfulness to the little generation and make them more
