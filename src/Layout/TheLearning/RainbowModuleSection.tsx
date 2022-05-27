@@ -75,15 +75,15 @@ export default function RainbowModuleSection() {
                         className="h-full w-full object-cover"
                         src="img/Modules-img.svg"
                         alt="People working on laptops"
-                      />{' '}
-                    </div>{' '}
+                      />
+                    </div>
                     <Overlay className="relative mt-4 text-white  text-5xl">
                       <div className="centered">01. Understanding Self</div>
-                      {/* <div className="centered pt-6">Being Mindful</div>
-                      <div className="centered">Power of Visualization</div>
-                      <div className="centered">Power of Affirmations</div>
-                      <div className="centered">Excellence</div>
-                      <div className="centered">My World</div> */}
+                      <div className="centered pt-12">02. Being Mindful</div>
+                      <div className="centered pt-20">03. Power of Visualization</div>
+                      <div className="centered pt-20">04. Power of Affirmations</div>
+                      <div className="centered pt-20">05. Excellence</div>
+                      <div className="centered pt-20">06. My World</div>
                     </Overlay>
                   </div>
                 </div>
