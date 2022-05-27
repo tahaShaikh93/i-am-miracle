@@ -1,99 +1,147 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
-
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+const stats = [
+  { label: 'Founded', value: '2021' },
+  { label: 'Employees', value: '5' },
+  { label: 'Beta Users', value: '521' },
+  { label: 'Raised', value: '$25M' },
 ];
 
 export default function Example() {
   return (
-    <div className="relative bg-gray-50 overflow-hidden">
-      <div
-        className="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full"
-        aria-hidden="true"
-      >
-        <div className="relative h-full max-w-7xl mx-auto">
-          <svg
-            className="absolute right-full transform translate-y-1/4 translate-x-1/4 lg:translate-x-1/2"
-            width={404}
-            height={784}
-            fill="none"
-            viewBox="0 0 404 784"
+    <div className="relative bg-white py-16 sm:py-24">
+      <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+        <div className="relative sm:py-16 lg:py-0">
+          <div
+            aria-hidden="true"
+            className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
           >
-            <defs>
-              <pattern
-                id="f210dbf6-a58d-4871-961e-36d5016a0f49"
-                x={0}
-                y={0}
-                width={20}
-                height={20}
-                patternUnits="userSpaceOnUse"
-              >
-                <rect x={0} y={0} width={4} height={4} className="text-red" fill="currentColor" />
-              </pattern>
-            </defs>
-            <rect width={404} height={784} fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
-          </svg>
-          <svg
-            className="absolute left-full transform -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2"
-            width={404}
-            height={784}
-            fill="none"
-            viewBox="0 0 404 784"
-          >
-            <defs>
-              <pattern
-                id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b"
-                x={0}
-                y={0}
-                width={20}
-                height={20}
-                patternUnits="userSpaceOnUse"
-              >
-                <rect x={0} y={0} width={4} height={4} className="text-blue" fill="currentColor" />
-              </pattern>
-            </defs>
-            <rect width={404} height={784} fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
-          </svg>
-        </div>
-      </div>
+            <div className="absolute inset-y-0 right-1/2 w-full bg-gray-50 rounded-r-3xl lg:right-72" />
+            <svg
+              className="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12"
+              width={404}
+              height={392}
+              fill="none"
+              viewBox="0 0 404 392"
+            >
+              <defs>
+                <pattern
+                  id="02f20b47-fd69-4224-a62a-4c9de5c763f7"
+                  x={0}
+                  y={0}
+                  width={20}
+                  height={20}
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect
+                    x={0}
+                    y={0}
+                    width={4}
+                    height={4}
+                    className="text-yellow"
+                    fill="currentColor"
+                  />
+                </pattern>
+              </defs>
+              <rect width={404} height={392} fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)" />
+            </svg>
+          </div>
+          <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
+            {/* Testimonial card*/}
+            <div className="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
+              <img
+                className="absolute inset-0 h-full w-full object-cover"
+                src="https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
+                alt=""
+              />
+              <div className="absolute inset-0 bg-indigo-500 mix-blend-multiply" />
+              <div className="absolute inset-0 bg-gradient-to-t from-yellow via-yellow opacity-90" />
+              <div className="relative px-8">
+                <div>
+                  <img
+                    className="h-12"
+                    src="https://tailwindui.com/img/logos/workcation.svg?color=white"
+                    alt="Workcation"
+                  />
+                </div>
+                <blockquote className="mt-8">
+                  <div className="relative text-lg font-medium text-white md:flex-grow">
+                    <svg
+                      className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-yellow"
+                      fill="currentColor"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                    >
+                      <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                    </svg>
+                    <p className="relative">
+                      Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium
+                      in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis
+                      amet.
+                    </p>
+                  </div>
 
-      <div className="relative pt-6 pb-16 sm:pb-24">
-        <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
-          <div className="text-center">
-            <h1 className="text-4xl tracking-tight font-extrabold text-red sm:text-5xl md:text-6xl">
-              <span className="block xl:inline">Data to enrich your</span>{' '}
-              <span className="block text-indigo-600 xl:inline">online business</span>
-            </h1>
-            <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
-              commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
-            </p>
-            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-              <div className="rounded-md shadow">
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
-                >
-                  Get started
-                </a>
-              </div>
-              <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
-                >
-                  Live demo
-                </a>
+                  <footer className="mt-4">
+                    <p className="text-base font-semibold text-red">
+                      Sarah Williams, CEO at Workcation
+                    </p>
+                  </footer>
+                </blockquote>
               </div>
             </div>
           </div>
-        </main>
+        </div>
+
+        <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+          {/* Content area */}
+          <div className="pt-12 sm:pt-16 lg:pt-20">
+            <h2 className="text-3xl text-gray3 font-extrabold tracking-tight sm:text-4xl">
+              On a mission to empower teams
+            </h2>
+            <div className="mt-6 text-red space-y-6">
+              <p className="text-lg">
+                Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed
+                consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.
+                Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames
+                senectus vitae.
+              </p>
+              <p className="text-base leading-7">
+                Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem
+                nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet
+                quam urna. Sollicitudin tristique eros erat odio sed vitae, consequat turpis
+                elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut
+                volutpat donec laoreet quam urna.
+              </p>
+              <p className="text-base leading-7">
+                Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies.
+                Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum
+                consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
+                fermentum lacus in. Viverra.
+              </p>
+            </div>
+          </div>
+
+          {/* Stats section */}
+          <div className="mt-10">
+            <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
+              {stats.map((stat) => (
+                <div key={stat.label} className="border-t-2 border-gray3 pt-6">
+                  <dt className="text-base font-medium text-green2">{stat.label}</dt>
+                  <dd className="text-3xl font-extrabold tracking-tight text-green">
+                    {stat.value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+            <div className="mt-10">
+              <a href="#" className="text-base font-medium text-blue">
+                {' '}
+                Learn more about how we're changing the world <span aria-hidden="true">
+                  &rarr;
+                </span>{' '}
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

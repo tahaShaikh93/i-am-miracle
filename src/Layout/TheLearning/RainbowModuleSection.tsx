@@ -1,3 +1,46 @@
+import styled from 'styled-components';
+
+const Overlay = styled.text`
+ .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ 
+  padding-top: 20px;
+  
+}
+  }
+`;
 export default function RainbowModuleSection() {
   return (
     <div className="bg-white">
@@ -8,28 +51,40 @@ export default function RainbowModuleSection() {
             <div className="max-w-full ">
               <div className="relative ">
                 <div className="absolute inset-0">
+                  {' '}
                   <img
                     className="h-full w-full object-cover"
                     src="img/Rainbow-img.svg"
                     alt="People working on laptops"
-                  />
-                  <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
+                  />{' '}
                 </div>
+
                 {/* <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8"> */}
                 <div className="relative ">
-                  <div className=" max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-left">
+                  <div
+                    className=" max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-left"
+                    style={{ height: '738px' }}
+                  >
                     <div className="">
                       <img
-                        className="absolute left-full transform -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2"
-                        width={404}
-                        height={784}
+                        // className="absolute left-full transform -translate-y-52 -translate-x-4 md:-translate-y-1/3 lg:-translate-x-1/2"
+                        // width={404}
+                        // height={784}
                         // fill="none"
                         // viewBox="0 0 404 784"
-                        // className="h-full w-full object-cover"
+                        className="h-full w-full object-cover"
                         src="img/Modules-img.svg"
                         alt="People working on laptops"
-                      />
-                    </div>
+                      />{' '}
+                    </div>{' '}
+                    <Overlay className="relative text-white container text-5xl">
+                      <div className="centered">Understanding Self</div>
+                      {/* <div className="centered pt-6">Being Mindful</div>
+                      <div className="centered">Power of Visualization</div>
+                      <div className="centered">Power of Affirmations</div>
+                      <div className="centered">Excellence</div>
+                      <div className="centered">My World</div> */}
+                    </Overlay>
                   </div>
                 </div>
               </div>

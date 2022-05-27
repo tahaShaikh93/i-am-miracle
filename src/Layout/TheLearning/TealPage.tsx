@@ -4,7 +4,7 @@ export default function TealPage() {
       <main>
         <div>
           {/* teal page bg */}
-          <div className="relative -top-1">
+          <div className="relative ">
             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
             <div className="max-w-full ">
               <div className="relative ">
@@ -19,7 +19,7 @@ export default function TealPage() {
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <img
                     className="h-full w-full object-cover"
-                    src="img/Page-bg.svg"
+                    src="img/Page-img.png"
                     alt="People working on laptops"
                   />
 
