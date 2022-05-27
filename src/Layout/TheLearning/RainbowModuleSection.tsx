@@ -77,7 +77,7 @@ export default function RainbowModuleSection() {
                         alt="People working on laptops"
                       />{' '}
                     </div>{' '}
-                    <Overlay className="relative text-white container text-5xl">
+                    <Overlay className="relative text-white  text-5xl">
                       <div className="centered">Understanding Self</div>
                       {/* <div className="centered pt-6">Being Mindful</div>
                       <div className="centered">Power of Visualization</div>

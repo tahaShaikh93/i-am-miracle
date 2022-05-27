@@ -11,7 +11,7 @@ export default function KidsPlayingSection() {
                 <div className="absolute inset-0">
                   <img
                     className="h-full w-full object-cover"
-                    src="img/kids-playing-img.svg"
+                    src="img/Kid-playing-img.svg"
                     alt="Kids playing imagee"
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
