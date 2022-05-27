@@ -7,11 +7,11 @@ export default function KidsPlayingSection() {
           <div className="relative">
             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
             <div className="max-w-full ">
-              <div className="relative ">
+              <div className="relative pb-72 ">
                 <div className="absolute inset-0">
                   <img
                     className="h-full w-full object-cover"
-                    src="img/Kid-playing-img.svg"
+                    src="img/Kids@2x.png"
                     alt="Kids playing imagee"
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
