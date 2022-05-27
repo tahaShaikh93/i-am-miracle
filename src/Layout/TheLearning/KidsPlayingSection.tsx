@@ -1,6 +1,6 @@
 export default function KidsPlayingSection() {
   return (
-    <div className="bg-white">
+    <div className="bg-white max-h-screen">
       <main>
         <div>
           {/* kids playing image */}
@@ -12,7 +12,7 @@ export default function KidsPlayingSection() {
                   <img
                     className="h-full w-full object-cover"
                     src="img/kids-playing-img.svg"
-                    alt="People working on laptops"
+                    alt="Kids playing imagee"
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
                 </div>

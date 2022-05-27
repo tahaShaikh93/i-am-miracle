@@ -1,6 +1,6 @@
 export default function TealPage() {
   return (
-    <div className="bg-white">
+    <div className="bg-white max-w-screen top-0.5">
       <main>
         <div>
           {/* teal page bg */}
