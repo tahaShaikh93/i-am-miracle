@@ -1,10 +1,10 @@
 export default function TealPage() {
   return (
-    <div className="bg-white max-w-screen top-0.5">
+    <div className="bg-white max-w-screen ">
       <main>
         <div>
           {/* teal page bg */}
-          <div className="relative ">
+          <div className="relative -m-20 ">
             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
             <div className="max-w-full ">
               <div className="relative ">
