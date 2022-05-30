@@ -54,7 +54,7 @@ export default function RainbowModuleSection() {
                   {' '}
                   <img
                     className="h-full w-full object-cover"
-                    src="img/Rainbow-img.svg"
+                    src="img/Rainbow text@2x 1.png"
                     alt="People working on laptops"
                   />{' '}
                 </div>
@@ -63,7 +63,7 @@ export default function RainbowModuleSection() {
                 <div className="relative ">
                   <div
                     className=" max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-left"
-                    style={{ height: '738px' }}
+                    style={{ height: '878px' }}
                   >
                     <div className="">
                       <img
@@ -72,19 +72,19 @@ export default function RainbowModuleSection() {
                         // height={784}
                         // fill="none"
                         // viewBox="0 0 404 784"
-                        className="h-full w-full object-cover"
+                        className="h-full   w-full object-cover"
                         src="img/Modules-img.svg"
                         alt="People working on laptops"
                       />
                     </div>
-                    <Overlay className="relative mt-4 text-white  text-5xl">
+                    {/* <Overlay className="relative mt-4 text-white  text-5xl">
                       <div className="centered">01. Understanding Self</div>
                       <div className="centered pt-12">02. Being Mindful</div>
                       <div className="centered pt-20">03. Power of Visualization</div>
                       <div className="centered pt-20">04. Power of Affirmations</div>
                       <div className="centered pt-20">05. Excellence</div>
                       <div className="centered pt-20">06. My World</div>
-                    </Overlay>
+                    </Overlay> */}
                   </div>
                 </div>
               </div>

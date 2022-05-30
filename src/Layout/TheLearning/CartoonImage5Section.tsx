@@ -5,7 +5,7 @@ export default function CartoonImage5Section() {
     <div className="bg-white">
       <main>
         <div>
-          <div className="relative">
+          <div className="relative shadow-2xl">
             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
             <div className="max-w-full ">
               <div className="relative ">
@@ -17,7 +17,7 @@ export default function CartoonImage5Section() {
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
                 </div>
-                <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                <div className="relative px-32 py-16 sm:px-32 sm:py-24 lg:py-32 lg:px-32">
                   <h1 className="text-left text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
                     <span className="block text-white">Hello ,</span>
 

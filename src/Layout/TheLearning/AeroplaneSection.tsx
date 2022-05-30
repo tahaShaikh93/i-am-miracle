@@ -16,12 +16,18 @@ export default function AeroplaneSection() {
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
                 </div>
-                <div className="relative px-4 py-16 sm:px-6 ">
+                <div className="relative px-0 pt-16 sm:px-0">
+                  {/* <img
+                    className="relative z-999 "
+                    style={{ height: '130px' }}
+                    src="img/Cloud2.svg"
+                    alt="People working on laptops"
+                  /> */}
                   <div
-                    className=" max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center"
+                    className="flex max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center"
                     style={{ marginTop: '170px' }}
                   >
-                    <div className="space-y-4 sm:space-y-0 sm:mx-auto">
+                    <div className="space-y-4 flex sm:space-y-0 sm:mx-auto">
                       <img
                         className=" w-full object-cover"
                         style={{ height: '130px' }}
@@ -30,6 +36,20 @@ export default function AeroplaneSection() {
                       />
                     </div>
                   </div>
+                </div>
+                <div className="flex -mx-24 justify-between">
+                  <img
+                    className="relative  z-999 "
+                    style={{ height: '130px' }}
+                    src="img/Cloud2.svg"
+                    alt="People working on laptops"
+                  />
+                  <img
+                    className="relative  z-999 "
+                    style={{ height: '130px' }}
+                    src="img/Cloud1.svg"
+                    alt="People working on laptops"
+                  />
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-0  lg:py-0  lg:px-8">
                   <div className="" style={{ textAlign: 'right' }}>
