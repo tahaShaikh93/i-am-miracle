@@ -1,72 +1,6 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
-import {
-  AnnotationIcon,
-  ChatAlt2Icon,
-  InboxIcon,
-  MenuIcon,
-  QuestionMarkCircleIcon,
-  XIcon,
-} from '@heroicons/react/outline';
-import { ChevronDownIcon } from '@heroicons/react/solid';
-import styled from 'styled-components';
-
-const Overlay = styled.button`
-  .overlay__about {
-    background-image: url('/img/Orange-card2.svg');
-    @apply bg-slate-900;
-    background-repeat: no-repeat;
-    position: left;
-  }
-
-  .overlay__team {
-    background-image: url('./img/Welcome-bg-banner.svg');
-    @apply bg-slate-900;
-    background-repeat: no-repeat;
-    position: right;
-  }
-`;
-
-const solutions = [
-  {
-    name: 'Inbox',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
-    icon: InboxIcon,
-  },
-  {
-    name: 'Messaging',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
-    icon: AnnotationIcon,
-  },
-  {
-    name: 'Live Chat',
-    description: "Your customers' data will be safe and secure.",
-    href: '#',
-    icon: ChatAlt2Icon,
-  },
-  {
-    name: 'Knowledge Base',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: QuestionMarkCircleIcon,
-  },
-];
-const navigation = [
-  { name: 'The learning', href: '#' },
-  { name: 'Modules', href: '#' },
-  { name: 'Benefit', href: '#' },
-];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
-
 export default function Footer() {
   return (
-    <div className="bg-white">
+    <div className="bg-white ">
       <main>
         <div>
           {/* Logo cloud */}
@@ -75,10 +9,10 @@ export default function Footer() {
               <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
                 Contact us
               </p>
-              <div className="mt-6 justify-center divide-x gap-3 flex">
+              <div className="mt-6 text-center justify-center lg:divide-x gap-3 lg:flex">
                 <div className="">contact@iammiracle.in</div>
-                <div className="px-4">9537839991</div>
-                <div className="px-4">© I Am Miracle 2022</div>
+                <div className="lg:px-4">9537839991</div>
+                <div className="lg:px-4">© I Am Miracle 2022</div>
               </div>
               {/* <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                 <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">

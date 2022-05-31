@@ -17,11 +17,11 @@ export default function CartoonImage5Section() {
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
                 </div>
-                <div className="relative px-32 py-16 sm:px-32 sm:py-24 lg:py-32 lg:px-32">
+                <div className="relative  py-16 sm:p-24 lg:py-32 lg:px-32       w-full justify-center px-4 sm:px-6 sm:py-24  items-center ">
                   <h1 className="text-left text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
                     <span className="block text-white">Hello ,</span>
 
-                    <span className="block text-indigo-200">I am Mirako</span>
+                    <span className="block text-brown">I am Mirako</span>
                   </h1>
 
                   {/* <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center"> */}

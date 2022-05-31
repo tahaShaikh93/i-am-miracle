@@ -12,22 +12,6 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import styled from 'styled-components';
 
-const Overlay = styled.button`
-  .overlay__about {
-    background-image: url('/img/Orange-card2.svg');
-    @apply bg-slate-900;
-    background-repeat: no-repeat;
-    position: left;
-  }
-
-  .overlay__team {
-    background-image: url('./img/Welcome-bg-banner.svg');
-    @apply bg-slate-900;
-    background-repeat: no-repeat;
-    position: right;
-  }
-`;
-
 const solutions = [
   {
     name: 'Inbox',
@@ -55,6 +39,7 @@ const solutions = [
   },
 ];
 const navigation = [
+  { name: 'The learning', href: '#' },
   { name: 'The learning', href: '#' },
   { name: 'Modules', href: '#' },
   { name: 'Benefit', href: '#' },

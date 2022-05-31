@@ -26,6 +26,7 @@ module.exports = {
       green2: '#00B5A3',
       yellow: '#FFC72D',
       green: '#3cff00',
+      green1: '#137A7F',
       orange: '#FF6000',
       orange1: '#FF6100',
       gray: '#EEEEEE',
@@ -39,7 +40,7 @@ module.exports = {
       gray8: '#606060',
       gray9: '#9a9a9a',
       gray10: '#E5E5E5',
-
+      brown: '#A96C1C',
       lightgray: '#1A202C',
       textgray: '#718096',
       blue: '#68ced0',

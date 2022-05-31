@@ -93,7 +93,7 @@ export default function BlueCard3() {
                         <div className="relative   ">
                           <div className="absolute inset-0">
                             <img
-                              className="px-16"
+                              className="px-16 "
                               src="img/Aboutus-bg.svg"
                               alt="People working on laptops"
                             />
