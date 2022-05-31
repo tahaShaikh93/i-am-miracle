@@ -44,7 +44,7 @@ export default function KidsPlayingSection() {
                   <div className="mt-10 pb-64 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                     <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5"></div>
                     <p className="text-left text-lg font-normal tracking-tight sm:text-sm lg:text-lg">
-                      <span className="block mx-96 text-black">
+                      <span className="lg:block mx-96 text-black">
                         We are currently starting with the age group of 6 -11 years. Since young
                         kids are impressionable at that age, it is easier to start teaching them
                         what's important for their own betterment.
