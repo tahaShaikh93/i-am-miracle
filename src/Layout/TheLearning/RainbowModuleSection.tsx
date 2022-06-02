@@ -51,27 +51,21 @@ export default function RainbowModuleSection() {
             <div className="max-w-full ">
               <div className="relative ">
                 <div className="absolute inset-0">
-                  {' '}
                   <img
-                    className="h-full w-full object-cover"
+                    className="w-screen"
                     src="img/Rainbow text@2x 1.png"
                     alt="People working on laptops"
-                  />{' '}
+                  />
                 </div>
 
                 {/* <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8"> */}
-                <div className="relative ">
+                <div className="relative  ">
                   <div
-                    className=" max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-left"
-                    style={{ height: '878px' }}
+                    className=" max-w-sm mx-auto lg:mb-96 sm:max-w-none sm:flex sm:justify-left"
+                    // style={{ height: '878px' }}
                   >
                     <div className="">
                       <img
-                        // className="absolute left-full transform -translate-y-52 -translate-x-4 md:-translate-y-1/3 lg:-translate-x-1/2"
-                        // width={404}
-                        // height={784}
-                        // fill="none"
-                        // viewBox="0 0 404 784"
                         className="h-full   w-full object-cover"
                         src="img/Modules-img.svg"
                         alt="People working on laptops"

@@ -1,3 +1,31 @@
+import styled from 'styled-components';
+
+const MainBlock = styled.div`
+  & {
+   background: #ff6000;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 600px) {
+ 
+float: left;
+width: 100%;
+
+}
+ @media only screen and (max-width: 480px) {
+float: left;
+width: 100%;
+
+}
+  }
+`;
 export default function YellowCardModuleSection() {
   return (
     <div className="bg-white">
@@ -5,7 +33,6 @@ export default function YellowCardModuleSection() {
         <div>
           {/* Yellow card */}
           <div className="relative">
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
             <div className="max-w-full ">
               <div className="relative ">
                 <div className="absolute inset-0">
@@ -14,20 +41,18 @@ export default function YellowCardModuleSection() {
                     src="img/Banner 5@2x-cropped.png"
                     alt="People working on laptops"
                   />
-                  <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <div className="">
                     <div className="relative">
-                      <div className="absolute inset-0 h-1/2 bg-gray-50" />
                       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="flex  justify-center">
+                        <div className="lg:flex  justify-center">
                           <div className="p-12 text-black bg-white">
-                            <div className="text-center flex  text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                            <div className="text-center flex text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
                               <div className="px-6 py-16 flex  text-yellow">Modules</div>
                             </div>
                           </div>
-                          <div className="flex flex-col align-text-top text-white bg-red1">
+                          <div className=" align-text-top text-white bg-red1">
                             <div className="text-2xl font-extrabold border-b py-3 flex justify-center px-6 border-white">
                               Beginner
                             </div>
@@ -35,7 +60,7 @@ export default function YellowCardModuleSection() {
                               2<p className="">weeks</p>
                             </div>
                           </div>
-                          <div className="flex flex-col text-white bg-yellow">
+                          <div className=" text-white bg-yellow">
                             <div className="text-2xl font-extrabold border-b py-3 px-6 flex justify-center border-white">
                               Intermediate
                             </div>
@@ -43,7 +68,7 @@ export default function YellowCardModuleSection() {
                               4<p className="">weeks</p>
                             </div>
                           </div>
-                          <div className="flex flex-col text-white bg-green2">
+                          <div className=" text-white bg-green2">
                             <div className="text-2xl font-extrabold border-b py-3 px-6 flex justify-center border-white">
                               Advance
                             </div>
