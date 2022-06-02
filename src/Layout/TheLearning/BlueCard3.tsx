@@ -97,38 +97,6 @@ const MainBlock = styled.div`
     }
   }
 `;
-const Card = styled.div`
-  & {
-    width: 100%;
-    border: 0px solid #5e5d5d;
-  }
-  &.hide .cardcontent {
-    height: 0px;
-    border-radius: 0px !important;
-    background: #00000000 !important;
-    transition: all 1s ease;
-    display: none;
-    top: 10px;
-  }
-  &.show .cardcontent {
-    border-radius: 0px !important;
-    background: #00000000 !important;
-    padding: 0px 20px;
-    transition: all 1s ease;
-    display: block;
-    height: auto;
-    top: 0px;
-  }
-  &.hide .cardHeader {
-    border-radius: 5px !important;
-    background: #ffffff !important;
-    transition: all 1s ease;
-  }
-  &.show .cardHeader {
-    border-radius: 0px !important;
-    background: #ffffff !important;
-  }
-`;
 export default function BlueCard3() {
   return (
     <div className="bg-white ">

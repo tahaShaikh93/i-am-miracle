@@ -10,7 +10,6 @@ import {
   XIcon,
 } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
-import styled from 'styled-components';
 
 const solutions = [
   {

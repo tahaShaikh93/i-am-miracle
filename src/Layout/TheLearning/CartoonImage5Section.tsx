@@ -1,5 +1,3 @@
-import Footer from '../Footer';
-
 export default function CartoonImage5Section() {
   return (
     <div className="bg-white">
