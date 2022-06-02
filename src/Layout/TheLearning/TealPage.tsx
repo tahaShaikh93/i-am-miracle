@@ -1,31 +1,7 @@
-import { Fragment, useState } from 'react';
-import styled from 'styled-components';
+// import { useState } from 'react';
 
-const MainBlock = styled.div`
-  .background-img .overlay {
-    position: absolute;
-    background: '#FF4357';
-    overflow: hidden;
-    top: 0;
-    left: 0;
-  }
-
-  .background-img .overlay {
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 51, 51, 0.5);
-  }
-  .container {
-    position: relative;
-  }
-
-  .container img {
-    width: 100%;
-  }
-`;
 export default function TealPage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="bg-white">

@@ -1,31 +1,3 @@
-import styled from 'styled-components';
-
-const MainBlock = styled.div`
-  & {
-   background: #ff6000;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
-    color: #ffffff;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media only screen and (max-width: 600px) {
- 
-float: left;
-width: 100%;
-
-}
- @media only screen and (max-width: 480px) {
-float: left;
-width: 100%;
-
-}
-  }
-`;
 export default function YellowCardModuleSection() {
   return (
     <div className="bg-white">
