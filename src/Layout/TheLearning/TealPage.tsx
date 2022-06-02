@@ -1,35 +1,50 @@
-export default function TealPage() {
-  return (
-    <div className="bg-white max-w-screen ">
-      <main>
-        <div>
-          {/* teal page bg */}
-          <div className="relative -m-20 ">
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
-            <div className="max-w-full ">
-              <div className="relative ">
-                <div className="absolute inset-0">
-                  <img
-                    className="h-full w-full object-cover"
-                    src="img/New-teal-bg.svg"
-                    alt="People working on laptops"
-                  />
-                  <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
-                </div>
-                <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-                  <img
-                    className="h-full w-full object-cover"
-                    src="img/Page-img.png"
-                    alt="People working on laptops"
-                  />
+import { Fragment, useState } from 'react';
+import styled from 'styled-components';
 
-                  {/* <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center"> */}
-                </div>
-              </div>
-            </div>
-          </div>
+const MainBlock = styled.div`
+  .background-img .overlay {
+    position: absolute;
+    background: '#FF4357';
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+
+  .background-img .overlay {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 51, 51, 0.5);
+  }
+  .container {
+    position: relative;
+  }
+
+  .container img {
+    width: 100%;
+  }
+`;
+export default function TealPage() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  return (
+    <div className="bg-white">
+      {/* Hero section */}
+      <div className="relative bg-gray-900">
+        {/* Decorative image and overlay */}
+        <div aria-hidden="true" className="background-img absolute inset-0 overflow-hidden">
+          <img
+            src="img/New-teal-bg.svg"
+            alt=""
+            className="w-full h-full object-center object-cover"
+          />
         </div>
-      </main>
+        <div aria-hidden="true" className="absolute inset-0 bg-gray-900 opacity-50" />
+
+        <div className="relative  mx-auto py-12 px-6 flex flex-col items-center text-center sm:py-20 lg:px-0">
+          <img src="img/Page-img.png" alt="" className="w-full h-full object-center object-cover" />
+        </div>
+      </div>
     </div>
   );
 }

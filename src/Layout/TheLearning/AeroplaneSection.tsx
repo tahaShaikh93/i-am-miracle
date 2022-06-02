@@ -1,3 +1,117 @@
+import styled from 'styled-components';
+
+const MainBlock = styled.div`
+  & {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Default Design */
+  .gfg-div {
+    /* To make all elements center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Default Styling */
+    margin: 20px auto;
+    padding: 30px;
+    font-size: 30px;
+    width: 300px;
+    height: 300px;
+    background-color: darkseagreen;
+    color: black;
+  }
+
+  /* For Desktop View */
+  @media screen and (min-width: 1024px) {
+    .gfg-div {
+      background-color: #63c971;
+      color: #fff;
+    }
+  }
+
+  /* For Tablet View */
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .gfg-div {
+      width: 400px;
+      height: 400px;
+      background-color: orange;
+      color: black;
+    }
+  }
+
+  /* For Mobile Portrait View */
+  @media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .gfg-div {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      color: #fff;
+    }
+  }
+
+  /* For Mobile Landscape View */
+  @media screen and (max-device-width: 640px) and (orientation: landscape) {
+    .gfg-div {
+      width: 400px;
+      height: 200px;
+      background-color: cyan;
+      color: black;
+    }
+  }
+
+  /* For Mobile Phones Portrait or Landscape View */
+  @media screen and (max-device-width: 640px) {
+    .gfg-div {
+      width: 400px;
+      height: 200px;
+      background-color: chartreuse;
+      color: black;
+    }
+  }
+
+  /* For iPhone 4 Portrait or Landscape View */
+  @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    .gfg-div {
+      width: 400px;
+      height: 400px;
+      background-color: brown;
+      color: black;
+    }
+  }
+
+  /* For iPhone 5 Portrait or Landscape View */
+  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    .gfg-div {
+      width: 400px;
+      height: 400px;
+      background-color: cornflowerblue;
+      color: black;
+    }
+  }
+
+  /* For iPhone 6 and 6 plus Portrait or Landscape View */
+  @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+    .gfg-div {
+      width: 400px;
+      height: 400px;
+      background-color: darkgoldenrod;
+      color: black;
+    }
+  }
+`;
 export default function AeroplaneSection() {
   return (
     <div className="bg-white">
@@ -5,18 +119,17 @@ export default function AeroplaneSection() {
         <div>
           {/* Blue card */}
           <div className="relative">
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
             <div className="max-w-full ">
               <div className="relative ">
                 <div className="absolute inset-0">
                   <img
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-fill"
                     src="img/Banner 4@2x-cropped.png"
                     alt="People working on laptops"
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
                 </div>
-                <div className="relative px-0 pt-16 sm:px-0">
+                <div className="relative px-0  lg:pt-16 sm:px-0">
                   {/* <img
                     className="relative z-999 "
                     style={{ height: '130px' }}
@@ -25,11 +138,11 @@ export default function AeroplaneSection() {
                   /> */}
                   <div
                     className="flex max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center"
-                    style={{ marginTop: '170px' }}
+                    // style={{ marginTop: '170px' }}
                   >
                     <div className="space-y-4 flex sm:space-y-0 sm:mx-auto">
                       <img
-                        className=" w-full object-cover"
+                        className=" w-full object-contain"
                         style={{ height: '130px' }}
                         src="img/Aeroplane-image.svg"
                         alt="People working on laptops"
@@ -51,43 +164,41 @@ export default function AeroplaneSection() {
                     alt="People working on laptops"
                   />
                 </div>
-                <div className="relative px-4 py-16 sm:px-6 sm:py-0  lg:py-0  lg:px-8">
-                  <div className="" style={{ textAlign: 'right' }}>
-                    <div className="relative  ">
-                      <div
-                        className="md:w-6/12 flex w-full mb-10 md:mb-0 mx-7 sm:mx-7 md:mx-0 lg:mx-0 xl:mx-0"
-                        style={{ float: 'right' }}
-                      >
-                        <div className="">
-                          <div className="relative   "></div>
-                          <p className="text-black py-10 px-20">
-                            Every kid is provided with a list of dos and don'ts since they are not
-                            cognitively advanced to make the right decision. Parents feel that their
-                            child is unaware of such things, and despite that expect the young ones
-                            to follow the elders' sense of right and wrong. But what if that could
-                            be changed. What if we teach our kids the basis of day-to-day decision
-                            making, choosing between what is good and not so good for them? What if
-                            we develop skills to build their list of healthy habits of eating,
-                            screen time, discipline, time management. And yes, it goes with a lot of
-                            trust and patience. The kids would be introduced to a series of
-                            activities, story sessions, group discussions, games, concentration
-                            exercises, memory hack exercises, practising power of visualisation.
-                            They would be introduced to the inner magical power of conscious living,
-                            positive mindset, goal setting, etc, which shall help them develop a
-                            strong personality. They would understand the importance of healthy
-                            eating along with healthy lifestyle. I AM MIRACLE shall help your young
-                            ones understand the true power of visualisations that shall enable them
-                            to lead a wholesome, aware and mindful life.
-                          </p>
+                <div className="relative lg:flex lg:justify-end lg:gap-x-40">
+                  <div className="relative ">
+                    <div className="">
+                      <div className="relative  ">
+                        <div
+                        // className="md:w-6/12 flex w-full mb-10 md:mb-0 mx-7 sm:mx-7 md:mx-0 lg:mx-0 xl:mx-0"
+                        // style={{ float: 'right' }}
+                        >
+                          <img
+                            className="lg:h-96 lg:w-72 object-cover"
+                            src="img/Boy-image.svg"
+                            alt="People working on laptops"
+                          />
                         </div>
                       </div>
                     </div>
                   </div>
-                  <img
-                    className=" object-cover"
-                    src="img/Boy-image.svg"
-                    alt="People working on laptops"
-                  />
+                  <p className="text-black text-center lg:text-lg xs:text-xs  lg:py-10 lg:px-20 md:w-6/12 flex w-full lg:mb-10 md:mb-0 mx-7 sm:mx-7 md:mx-0 lg:mx-0 xl:mx-0">
+                    Every kid is provided with a list of dos and don'ts since they are not
+                    cognitively advanced to make the right decision. Parents feel that their child
+                    is unaware of such things, and despite that expect the young ones to follow the
+                    elders' sense of right and wrong. But what if that could be changed. What if we
+                    teach our kids the basis of day-to-day decision making, choosing between what is
+                    good and not so good for them? What if we develop skills to build their list of
+                    healthy habits of eating, screen time, discipline, time management. And yes, it
+                    goes with a lot of trust and patience. The kids would be introduced to a series
+                    of activities, story sessions, group discussions, games, concentration
+                    exercises, memory hack exercises, practising power of visualisation. They would
+                    be introduced to the inner magical power of conscious living, positive mindset,
+                    goal setting, etc, which shall help them develop a strong personality. They
+                    would understand the importance of healthy eating along with healthy lifestyle.
+                    I AM MIRACLE shall help your young ones understand the true power of
+                    visualisations that shall enable them to lead a wholesome, aware and mindful
+                    life.
+                  </p>
                 </div>
               </div>
             </div>

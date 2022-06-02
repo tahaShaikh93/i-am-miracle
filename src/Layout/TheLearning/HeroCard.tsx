@@ -35,21 +35,21 @@ export default function HeroCard() {
         </div>
       </div> */}
           <div className="relative">
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
+            <div className="absolute inset-x-0 bottom-0 h-4/5 bg-gray-100" />
             <div className="max-w-full ">
               <div className="relative shadow-xl sm:rounded-none ">
                 <div className="absolute inset-0">
                   <img
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-fill"
                     src="img/Banner 1@2x-cropped.png"
                     alt="People working on laptops"
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
                 </div>
-                <div className="relative flex justify-center  items-center ">
+                <div className="relative pt-16 flex justify-center  items-center ">
                   <img
-                    className="object-contain "
-                    style={{ height: '350px', marginTop: '63px' }}
+                    className="object-contain lg:h-72"
+                    // style={{ height: '350px' }}
                     src="img/Welcome-banner-img.svg"
                     alt="People working on laptops"
                   />
