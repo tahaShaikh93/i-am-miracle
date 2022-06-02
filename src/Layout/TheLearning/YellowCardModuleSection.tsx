@@ -40,7 +40,7 @@ export default function YellowCardModuleSection() {
                               4<p className="">weeks</p>
                             </div>
                           </div>
-                          <div className=" text-white bg-green2">
+                          <div className=" text-white bg-green">
                             <div className="text-2xl font-extrabold border-b py-3 px-6 flex justify-center border-white">
                               Advance
                             </div>

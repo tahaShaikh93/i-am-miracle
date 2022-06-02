@@ -15,7 +15,7 @@ export default function AeroplaneSection() {
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
                 </div>
-                <div className="relative px-0  lg:pt-16 sm:px-0">
+                <div className="relative px-0 lg:pt-32 sm:px-0">
                   {/* <img
                     className="relative z-999 "
                     style={{ height: '130px' }}

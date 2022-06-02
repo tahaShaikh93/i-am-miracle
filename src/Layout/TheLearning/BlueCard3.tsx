@@ -99,21 +99,21 @@ const MainBlock = styled.div`
 `;
 export default function BlueCard3() {
   return (
-    <div className="bg-white ">
+    <div className="bg-white w-full">
       <main>
-        <div className="relative ">
-          <div className="absolute inset-0">
+        <div className="flex relative w-full xs:z-auto lg:z-999" style={{ marginTop: '-80px' }}>
+          <div className="absolute top-0 left-0 flex items-center justify-center">
             <img
-              className="h-full w-full object-cover"
+              className="w-full object-contain"
               src="img/Banner 3 (1).png"
               alt="People working on laptops"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-800 to-indigo-700 mix-blend-multiply" />
+            {/* <div className="absolute inset-0 bg-gradient-to-r from-purple-800 to-indigo-700 mix-blend-multiply" /> */}
           </div>
-          <div className="relative px-4  sm:px-6 sm:py-24 lg:py-32 lg:px-8 z-999">
-            <div className="relative  ">
-              <div className="md:w-6/12 w-full  lg:mb-10 md:mb-0 lg:mx-7 sm:mx-7 md:mx-0  xl:mx-0">
-                <div className="relative px-4 py-2 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+          <div className="relative px-4 xs:px-6 xs:py-24 lg:py-32 lg:px-8">
+            <div className="relative">
+              <div className="md:w-6/12 w-full  lg:mb-10 md:mb-0 lg:mx-7 xs:mx-7 md:mx-0  xl:mx-0">
+                <div className="relative px-4 py-2 xs:px-6 xs:py-24 lg:py-32 lg:px-8">
                   <div className="relative">
                     <div className="absolute inset-0">
                       <img
@@ -123,12 +123,12 @@ export default function BlueCard3() {
                       />
                     </div>
                     <div className="relative flex justify-center ">
-                      <h1 className="text-center lg:mt-4 text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                      <h1 className="text-center lg:mt-4 text-4xl font-extrabold tracking-tight xs:text-5xl lg:text-6xl">
                         <span className="block text-white">About us</span>
                       </h1>
                     </div>
                   </div>
-                  <MainBlock className="text-black sm:px-72 text-xs lg:mt-20 lg:py-10 lg:px-20">
+                  <MainBlock className="text-black xs:px-72 text-xs lg:mt-20 lg:py-10 lg:px-20">
                     In this fast-paced world, children usually tend to succumb to a lot of stress or
                     become hyperactive for want of something constantly new. I AM MIRACLE brings
                     mindfulness to the little generation and make them more aware of themselves,
