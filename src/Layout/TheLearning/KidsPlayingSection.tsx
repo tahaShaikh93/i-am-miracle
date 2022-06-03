@@ -1,6 +1,6 @@
 export default function KidsPlayingSection() {
   return (
-    <div className="bg-white max-h-screen">
+    <div className="bg-white ">
       <main>
         <div>
           {/* kids playing image */}
@@ -25,8 +25,11 @@ export default function KidsPlayingSection() {
                   </div>
                   {/* <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8"> */}
                   <div className="relative ">
-                    <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                      <span className="block text-white">Age Group (6-11)</span>
+                    <h1 className="text-center  font-extrabold tracking-tight xs:text-2xl lg:text-6xl">
+                      <span className="block text-white">
+                        Age Group (<span className="text-yellow">6</span> -
+                        <span className="text-yellow">11</span> )
+                      </span>
                     </h1>
 
                     {/* <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center"> */}
@@ -40,12 +43,12 @@ export default function KidsPlayingSection() {
                   {/* <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center"> */}
                   <div className="lg:mt-10 pb-64 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                     <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5"></div>
-                    <p className="text-left text-lg font-normal tracking-tight sm:text-sm lg:text-lg">
-                      <span className="lg:block lg:mx-96 text-black">
+                    <p className="text-left font-normal xs:tracking-normal  ">
+                      <p className="lg:block lg:mx-96 xs:text-sm lg:text-md text-black">
                         We are currently starting with the age group of 6 -11 years. Since young
                         kids are impressionable at that age, it is easier to start teaching them
                         what's important for their own betterment.
-                      </span>
+                      </p>
                     </p>
                   </div>
                 </div>

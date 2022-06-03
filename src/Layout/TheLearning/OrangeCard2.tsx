@@ -16,7 +16,7 @@ export default function OrangeCard2() {
                   />
                   <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
                 </div>
-                <div className="relative flex w-full justify-center px-4 py-16 sm:px-6 sm:py-24 lg:py-32 items-center lg:px-8">
+                <div className="relative flex w-full justify-center px-4 py-16 sm:px-6 xs:pb-24 lg:py-32 items-center lg:px-8">
                   <img
                     className=" object-contain"
                     style={{ height: '350px' }}

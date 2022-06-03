@@ -23,6 +23,7 @@ module.exports = {
       red: '#ff0000',
       red1: '#FF4357',
       yellow: '#FFC72D',
+      brown: '#A96C1C',
       green: "#00B5A3",
       blueCard: '#8ebfc6',
       customColors: {

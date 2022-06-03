@@ -6,9 +6,9 @@ export default function TealPage() {
   return (
     <div className="bg-white">
       {/* Hero section */}
-      <div className="relative bg-gray-900">
+      <div className="flex relative w-full xs:z-auto lg:z-999" style={{ marginTop: '-68px' }}>
         {/* Decorative image and overlay */}
-        <div aria-hidden="true" className="background-img absolute inset-0 overflow-hidden">
+        <div aria-hidden="true" className="background-img absolute inset-0 ">
           <img
             src="img/New-teal-bg.svg"
             alt=""
