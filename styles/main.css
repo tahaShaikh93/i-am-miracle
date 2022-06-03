@@ -508,8 +508,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 30;
 }
 
+.-z-10 {
+  z-index: -10;
+}
+
 .z-999 {
   z-index: 999;
+}
+
+.z-99 {
+  z-index: 99;
 }
 
 .col-span-1 {
@@ -1231,6 +1239,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1275,6 +1288,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-brown {
+  --tw-text-opacity: 1;
+  color: rgb(169 108 28 / var(--tw-text-opacity));
 }
 
 .text-yellow {
@@ -1427,6 +1445,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 320px) {
+  .xs\:left-0 {
+    left: 0px;
+  }
+
   .xs\:z-auto {
     z-index: auto;
   }
@@ -1449,14 +1471,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 2.5rem;
   }
 
-  .xs\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
+  .xs\:text-2xs {
+    font-size: 10px;
   }
 
-  .xs\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .xs\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xs\:text-1xs {
+    font-size: 11px;
+  }
+
+  .xs\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .xs\:tracking-normal {
+    letter-spacing: 0em;
   }
 }
 
@@ -1632,11 +1666,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .sm\:text-base {
@@ -1918,8 +1947,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 0px;
   }
 
-  .lg\:w-72 {
-    width: 18rem;
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:w-1\/2 {
@@ -1928,10 +1957,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-auto {
     width: auto;
-  }
-
-  .lg\:w-full {
-    width: 100%;
   }
 
   .lg\:max-w-2xl {
@@ -1952,6 +1977,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:-translate-x-1\/2 {
     --tw-translate-x: -50%;
+    -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:-translate-x-64 {
+    --tw-translate-x: -16rem;
+    -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:-translate-y-36 {
+    --tw-translate-y: -9rem;
+    -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:transform {
     -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
             transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
@@ -2094,6 +2136,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .lg\:text-md {
+    font-size: 15px;
   }
 
   .lg\:text-sm {

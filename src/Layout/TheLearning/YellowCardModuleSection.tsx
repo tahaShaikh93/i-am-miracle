@@ -14,10 +14,10 @@ export default function YellowCardModuleSection() {
                     alt="People working on laptops"
                   />
                 </div>
-                <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                <div className="relative px-4 xs:pb-8 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <div className="">
                     <div className="relative">
-                      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                      <div className="relative max-w-7xl xs:pb-8 mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="lg:flex  justify-center">
                           <div className="p-12 text-black bg-white">
                             <div className="text-center flex text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">

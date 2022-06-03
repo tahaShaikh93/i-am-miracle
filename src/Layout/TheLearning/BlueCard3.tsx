@@ -2,127 +2,52 @@ import React from 'react';
 import styled from 'styled-components';
 
 const MainBlock = styled.div`
-  /* Default Design */
-  .gfg-div {
-    /* To make all elements center */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  // width: 400px;
 
-    /* Default Styling */
-    margin: 20px auto;
-    padding: 30px;
-    font-size: 30px;
-    width: 300px;
-    height: 300px;
-    background-color: darkseagreen;
-    color: black;
-  }
-
-  /* For Desktop View */
-  @media screen and (min-width: 1024px) {
-    .gfg-div {
-      background-color: #63c971;
-      color: #fff;
-    }
-  }
-
-  /* For Tablet View */
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .gfg-div {
-      width: 400px;
-      height: 400px;
-      background-color: orange;
-      color: black;
-    }
-  }
-
-  /* For Mobile Portrait View */
-  @media screen and (max-device-width: 480px) and (orientation: portrait) {
-    .gfg-div {
-      width: 200px;
-      height: 200px;
-      background-color: red;
-      color: #fff;
-    }
-  }
-
-  /* For Mobile Landscape View */
-  @media screen and (max-device-width: 641px) and (orientation: landscape) {
-    .gfg-div {
-      width: 400px;
-      height: 200px;
-      background-color: cyan;
-      color: black;
-    }
-  }
-
-  /* For Mobile Phones Portrait or Landscape View */
-  @media screen and (max-device-width: 641px) {
-    .gfg-div {
-      width: 400px;
-      height: 200px;
-      background-color: chartreuse;
-      color: black;
-    }
-  }
-
-  /* For iPhone 4 Portrait or Landscape View */
-  @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-    .gfg-div {
-      width: 400px;
-      height: 600px;
-      background-color: brown;
-      color: black;
-    }
-  }
-
-  /* For iPhone 5 Portrait or Landscape View */
-  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-    .gfg-div {
-      width: 400px;
-      height: 600px;
-      background-color: cornflowerblue;
-      color: black;
-    }
-  }
-
-  /* For iPhone 6 and 6 plus Portrait or Landscape View */
-  @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
-    .gfg-div {
-      width: 400px;
-      height: 400px;
-      background-color: darkgoldenrod;
-      color: black;
-    }
-  }
+  // @media (min-width: 0px) and (max-width: 600px) {
+  //   width: 300px;
+  // }
 `;
 export default function BlueCard3() {
   return (
-    <div className="w-full flex flex-col min-h-screen">
-      <div className="flex-1 flex flex-wrap justify-center items-center relative xs:z-auto lg:z-999">
-        <div className="absolute w-full h-full flex items-center justify-center top-0 left-0">
-          <img className="object-cover" src="img/Banner-3.png" alt="People working on laptops" />
-        </div>
-        <div className="w-full relative">
-          <div className="relative flex lg:container lg:mx-auto xs:px-4 lg:px-8">
-            <div className="lg:w-1/2 xs:w-full">
-              <div className="w-full text-white">
-                <div className="w-full xs:px-10 lg:px-20">
-                  <div className="flex items-center justify-center relative">
-                    <div className="w-full flex justify-center items-center">
+    <MainBlock className=" bg-white w-full">
+      <main>
+        <div className="flex relative w-full xs:z-auto lg:z-999" style={{ marginTop: '-80px' }}>
+          <div className="absolute top-0 left-0 flex items-center justify-center">
+            <img
+              className="w-full object-contain"
+              src="img/Banner 3 (1).png"
+              alt="People working on laptops"
+            />
+            {/* <div className="absolute inset-0 bg-gradient-to-r from-purple-800 to-indigo-700 mix-blend-multiply" /> */}
+          </div>
+          <div className="relative px-4 xs:px-6 xs:py-6 lg:py-32 lg:px-8">
+            <div className="">
+              <div className="md:w-6/12 w-full  lg:mb-10 md:mb-0 lg:mx-7 xs:mx-0 md:mx-0  xl:mx-0">
+                <div className="relative  py-2 xs:px-0 xs:py-4 lg:py-32 lg:px-8">
+                  <div className="relative">
+                    <div className="absolute inset-0">
                       <img
                         className="w-full object-contain"
                         src="img/Aboutus-bg.svg"
                         alt="People working on laptops"
                       />
                     </div>
-                    <div className="absolute w-full h-full top-0 left-0 flex items-center justify-center">
-                      <h1 className="text-center text-4xl font-extrabold tracking-tight xs:text-5xl lg:text-6xl">
-                        About us
+                    <div className="relative flex justify-center ">
+                      <h1 className="text-center lg:mt-4  font-extrabold tracking-tight xs:text-2xl lg:text-6xl">
+                        <span className="block text-white">About us</span>
                       </h1>
                     </div>
                   </div>
+                  <p className="text-black xs:pt-2 xs:justify-start xs:text-1xs lg:text-md lg:mt-20 lg:py-10 lg:px-20">
+                    In this fast-paced world, children usually tend to succumb to a lot of stress or
+                    become hyperactive for want of something constantly new. I AM MIRACLE brings
+                    mindfulness to the little generation and make them more aware of themselves,
+                    their behaviour, and their surroundings. We have come up with structured modules
+                    and interactive activities through which we help children understand the
+                    importance of mindfulness, interpersonal relationships, meditation, attention
+                    and much more.
+                  </p>
                 </div>
                 <MainBlock className="text-justify xs:px-10 lg:py-10 lg:px-20 xs:text-xs lg:text-lg font-medium">
                   In this fast-paced world, children usually tend to succumb to a lot of stress or
@@ -136,7 +61,7 @@ export default function BlueCard3() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </main>
+    </MainBlock>
   );
 }
