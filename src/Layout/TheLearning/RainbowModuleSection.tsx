@@ -1,22 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ModuleSize = styled.div`
-  .img {
-    width: 100%;
-    height: auto;
-    text-align: center;
-  }
-
-  @media screen only and (min-device-width: 800px) {
-    .img {
-      width: 1000px;
-      height: auto;
-      text-align: left;
-    }
-  }
-`;
-
 const DesktopCloud = styled.div`
   @media screen and (min-width: 1025px) {
     height: calc(100% + 250px);
