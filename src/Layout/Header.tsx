@@ -52,8 +52,8 @@ export default function Header() {
   return (
     <div className="bg-white">
       <header>
-        <Popover className="relative bg-white shadow-2xl">
-          <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+        <Popover className="relative bg-white shadow-2xl font-kristen">
+          <div className="flex justify-between xs:px-4 py-6 lg:space-x-10 lg:px-8 lg:container lg:mx-auto">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <a href="#">
                 <span className="sr-only">Workflow</span>
@@ -66,14 +66,14 @@ export default function Header() {
                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
             </div>
-            <Popover.Group as="nav" className="hidden md:flex space-x-10">
-              <Popover className="relative">
+            <Popover.Group as="nav" className="xs:hidden lg:flex">
+              <Popover className="relative flex">
                 {({ open }) => (
                   <>
                     <Popover.Button
                       className={classNames(
-                        open ? 'text-gray-900' : 'text-gray-500',
-                        'group bg-white  inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                        open ? 'text-white bg-orange' : 'text-black',
+                        'px-4 bg-white hover:bg-orange inline-flex items-center text-base font-medium hover:text-white outline-none focus:outline-none cursor-pointer'
                       )}
                     >
                       <span>About us</span>
@@ -125,18 +125,18 @@ export default function Header() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-base font-medium text-gray-500 hover:text-gray-900"
+                  className="px-4 bg-white hover:bg-orange inline-flex items-center text-base font-medium hover:text-white outline-none focus:outline-none cursor-pointer"
                 >
                   {item.name}
                 </a>
               ))}
             </Popover.Group>
             {/* <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0"> */}
-            <div className="">
-              <div className="flex-shrink-0">
+            <div className="flex">
+              <div className="flex-shrink-0 flex items-center">
                 <img
-                  className="inline-block h-10 w-10 rounded-full"
-                  src="img/signin-orange-circle.svg"
+                  className="inline-flex h-10 w-10 rounded-full outline-none focus:outline-none cursor-pointer"
+                  src="img/user-icon.svg"
                   alt=""
                 />
               </div>

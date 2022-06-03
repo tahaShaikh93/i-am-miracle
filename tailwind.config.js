@@ -13,8 +13,7 @@ module.exports = {
       // '2xl': '1537px'
     },
     fontFamily: {
-      sans: ['Quicksand', 'sans-serif'],
-      serif: ['DM Serif Display', 'serif'],
+      kristen: ['kristen_itcregular'],
     },
     colors: {
       transparent: 'transparent',
@@ -23,13 +22,10 @@ module.exports = {
       red: '#ff0000',
       red1: '#FF4357',
       yellow: '#FFC72D',
-      green: "#00B5A3",
+      orange: '#de641f',
+      green: '#00B5A3',
       blueCard: '#8ebfc6',
       customColors: {
-        100: '#1d1e1e',
-        200: '#F0F0F0',
-        300: '#088dce',
-        400: '#f9f9f9',
         blueError: '#1d4ed8',
         greenError: '#047857',
         redError: '#dc2626',
